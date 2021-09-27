@@ -25,7 +25,7 @@ func init() {
 	})
 	core.AddCommand("", []core.Function{
 		{
-			Rules: []string{"dwz ?"},
+			Rules: []string{"dwz ?", "短网址 ?"},
 			Handle: func(s core.Sender) interface{} {
 				return getDwz(s.Get())
 			},
