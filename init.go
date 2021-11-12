@@ -32,6 +32,7 @@ func init() {
 			},
 		},
 	})
+	core.OttoFuncs["dwz"] = getDwz
 }
 
 type ShortUrl struct {
