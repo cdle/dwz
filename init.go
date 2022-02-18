@@ -11,7 +11,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var dwz = core.NewBucket("dwz")
+var dwz = core.MakeBucket("dwz")
 
 func init() {
 	core.Server.GET("/dwz", func(c *gin.Context) {
