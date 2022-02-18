@@ -45,7 +45,7 @@ func getDwz(url string) string {
 		Url: url,
 	}
 	dwz.Create(su)
-	return regexp.MustCompile(`https?://[\.\w]+:?\d*`).FindString(dwz.Get("address")) + "/" + dwz.Get("prefix", "d") + encode(int64(su.ID))
+	return regexp.MustCompile(`https?://[\.\w]+:?\d*`).FindString(dwz.GetString("address")) + "/" + dwz.GetString("prefix", "d") + encode(int64(su.ID))
 }
 
 func getWz(id string) string {
